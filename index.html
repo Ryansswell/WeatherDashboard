@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./Styles.css" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  <header class="hero">
+    <h1 class="app-title">Weather Dashboard</h1>
+  </header>
+
+  <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
+
+    <div class="Searchbox">
+        <h3 class="card-header text-uppercase">Search for a City</h3>
+        <form id="user-form" class="card-body">
+            <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+            <button type="submit" class="btn">Search</button>
+        </form>
+    </div>
+
+    <div class="display">
+        <h1 class="name"></h1>
+        <p class="desc"></p>
+        <p class="temp"></p>
+    </div>
+
+    <div id="weather-results"></div>
+
+    <div class="col-12 col-md-8">
+      <h2 class="subtitle">5-Day Forecast: <span id="repo-search-term"></span></h2>
+      <div id="repos-container" class="list-group"></div>
+    </div>
+  </main>
+
+  <script src="./js.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+    <!-- <div class="input">
+        <input type="text" class="inputValue">
+        <input type="submit" class="Submit">
+    </div> -->
