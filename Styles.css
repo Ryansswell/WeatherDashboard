@@ -1,7 +1,7 @@
 :root {
     --primary: #dadae9;
     --secondary: #4a9680;
-    --tertiary: hsl(22, 70%, 44%);
+    --third: hsl(22, 70%, 44%);
     --light-dark: #0e40e2;
     --dark: #696964;
     --h: Black;
@@ -75,7 +75,7 @@
   
    .btn:hover {
     color: var(--primary);
-    background-color: var(--tertiary);
+    background-color: var(--third);
     transform: translate(0, 0);
     box-shadow: 2px 2px var(--dark);
   }
@@ -102,7 +102,7 @@
   
    .btn-back:hover {
     color: var(--primary);
-    background-color: var(--tertiary);
+    background-color: var(--third);
     transform: translate(0, 0);
     box-shadow: 2px 2px var(--dark);
   }

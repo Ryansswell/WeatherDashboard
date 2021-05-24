@@ -1,8 +1,31 @@
+var searchHistory = [];
 var userFormEl = document.querySelector('#user-form');
-var languageButtonsEl = document.querySelector('#language-buttons');
-var nameInputEl = document.querySelector('#username');
-var repoContainerEl = document.querySelector('#repos-container');
-var repoSearchTerm = document.querySelector('#repo-search-term');
+vst userInput = document.querySelector("#search-input");
+var today = document.querySelector("#today");
+var forecast = document.querySelector("#forecast");
+var historyContainer = document.querySelector("#history-container");
+
+function renderHistory() {
+  searchHistory.innerHTML = "";
+  for (var i = searchHistory.length - 1; i >= 0; i--) {
+    var button = document.createElement("button");
+    bnt.setAttribute("class", "btn-history list-group-item-action");
+    btn.setAttribute("type", "button");
+    btn.setAttribute("aria-controls", "today forecast");
+    btn.setAttribute("data-search", searchHistory[i]);
+    btn.textContent = searchHistory[i];
+    searchHistory.append(btn);
+
+  }
+}
+
+
+
+
+// var languageButtonsEl = document.querySelector('#language-buttons');
+// var nameInputEl = document.querySelector('#username');
+// var repoContainerEl = document.querySelector('#repos-container');
+// var repoSearchTerm = document.querySelector('#repo-search-term');
 // var temp = document.querySelector('temp');
 // var desc = document.querySelector('desc');
 // var name = document.querySelector('name');
@@ -102,5 +125,7 @@ var displayRepos = function (repos, searchTerm) {
   }
 };
 
+
+initSearchHistory();
 userFormEl.addEventListener('submit', formSubmitHandler);
 languageButtonsEl.addEventListener('click', buttonClickHandler);
