@@ -1,6 +1,6 @@
 # Ryan's Weather Dashboard!
 
-I want to be able to see the weather forecast and pin your favorite locations. This can help me as a traveler or even just week to week outlook. I will be able to plan accordingly when travelling and make sure I have weather forecasts.
+I want to be able to see the weather forecast and pin my favorite locations. This can help me as a traveler or even just week to week outlook. I will be able to plan accordingly when travelling and make sure I have accurate weather forecasts.
 
 ## Description
 
@@ -26,7 +26,7 @@ This has been tested on W3C markup validator and no errors or warnings to show.
 
 ## ScreenShot
 
-![](WorkdayPic.PNG)
+![](WeatherPic.PNG)
 
 ## Credits
 
