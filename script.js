@@ -1,9 +1,14 @@
 var searchHistory = [];
-var userFormEl = document.querySelector('#user-form');
-vst userInput = document.querySelector("#search-input");
-var today = document.querySelector("#today");
-var forecast = document.querySelector("#forecast");
-var historyContainer = document.querySelector("#history-container");
+var weatherApiRootUrl = "https://api.openweathermap.org";
+var weatherApiKey = "d91f911bcf2c0f925fb6535547a5ddc9";
+var searchForm = document.querySelector("#search-form");
+var searchInput = document.querySelector("#search-input");
+var history = document.querySelector("#history");
+var todayContainer = document.querySelector("#today");
+var forecastContainer = document.querySelector("#forecast");
+var searchHistoryContainer = document.querySelector("#history");
+
+
 
 function renderHistory() {
     searchHistory.innerHTML = "";
